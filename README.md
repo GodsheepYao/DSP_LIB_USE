@@ -20,7 +20,7 @@
 ARM_MATH_CM4,__TARGET_FPU_VFP,__FPU_PRESENT=1  
 ARM_MATH_CM4表示在CM4中使用MATH库
 __TARGET_FPU_VFP表示在目标设备中使用FPU
-__FPU_PRESENT=1表示开启FPU，这个宏其实在stm32f407xx.h中有定义时，但是它并没有在core_cm4.h中起作用，在编译的时候会报错，应该是跟文件的编译顺序有关系，因此为了正常编译，在这里添加它。 
+__FPU_PRESENT=1表示开启FPU，这个宏其实在stm32f407xx.h中有定义时，但是它并没有在core_cm4.h中起作用，在编译的时候会报错，应该是跟文件的编译顺序有关系，因此为了正常编译，在这里添加它。   
 在C/C++选项卡中,的Include Paths中添加DSP库的路径：\Drivers\CMSIS\DSP\Include   
 (4)使用DSP库
 在相应的.c文件中添加头文件：arm_math.h、arm_const_structs.h即可使用。  
