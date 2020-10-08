@@ -1,12 +1,14 @@
-﻿软件环境：STM32CubeMX、Keil5
+﻿# DSP库的添加
+
+软件环境：STM32CubeMX、Keil5
 硬件环境：STM32F407
 
+#### **1**.使用STM32CubeMX生成Keil5工程
 
-1.使用STM32CubeMX生成Keil5工程
 注意：点击Project -> Settings打开工程设置窗口，点击Code Generator选项卡，在STM32Cube Firmware Library Package中选择Copy all used libraries into the project folder。
 
+#### **2**.打开并配置Keil 5工程
 
-2.打开并配置Keil 5工程
 (1)打开keil 5工程
 (2)添加DSP库到工程中
 若使用的是STM32CubeMX生成的工程，DSP库文件就在工程目录中，位于.\Drivers\CMSIS\Lib\ARM，里面有4个文件：
